@@ -4,29 +4,34 @@
   box-sizing: border-box;
 }
 body {
-  margin-top: 30px;
-  margin-left: 20px;
+  /* margin-top: 30px;
+  margin-left: 20px; */
   font-family: sans-serif;
   font-size: 25px;
-  color: plum;
+  color: red;
+}
+#homepage {
+  display: flex;
+  align-items: center;
   background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.homepage {
-  display: flex;
-  align-items: center;
-}
 
 img {
-  width: 68vh;
+  width: 70vh;
   height: 90%;
   border-radius: 20px;
 }
+
+.img {
+  margin-left: 50px;
+}
+
 #content {
   padding: 20px;
-  margin: 150px;
+  margin: 160px;
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
@@ -66,4 +71,309 @@ li {
   align-items: center;
   justify-content: center;
   list-style: none;
+}
+.about {
+  padding: 20px;
+  margin: 150px;
+  color: #000000;
+  margin-right: 250px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+#about {
+  /* display: flex;
+  align-items: center; */
+  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 70px;
+}
+#about h3 {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-exp {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+#education-exp {
+  /* margin: 20px; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#education-exp h2 {
+  text-align: center;
+}
+
+#education-exp div {
+  margin: 20px;
+  margin-right: 30px;
+}
+.expo {
+}
+.expo h4 {
+  margin-top: 10px;
+  padding: 10px;
+}
+.expo h5 {
+  margin-top: 10px;
+  padding: 10px;
+}
+.expo p {
+  margin-top: 10px;
+  padding: 10px;
+}
+.education,
+.experiance {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+.about-content .img {
+  border: 5px solid red;
+}
+
+.about-content .img img {
+  margin-bottom: -6px;
+}
+i {
+  font-size: 40px;
+  color: white;
+  padding: 25px;
+}
+
+#education-exp > .skills {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5% 10%;
+  color: #000000;
+}
+
+.card-container-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+}
+
+.card {
+  width: 48%;
+  margin: 1%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1%;
+}
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.card-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-buttons {
+  display: flex;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s linear;
+  width: 49%;
+  margin-right: 1%;
+}
+
+.button:hover {
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+
+.card-heading,
+.card-subtitle,
+.card-description {
+  margin-bottom: 10px;
+}
+#portfolio {
+  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn {
+  color: black;
+  border-style: solid;
+  padding: 1%;
+  margin: 100px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.my-details {
+  display: flex;
+  padding-top: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+.owl-carousel {
+  padding: 10%;
+  overflow: hidden;
+  color: #000000;
+}
+.testi {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3%;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  padding-bottom: 3%;
+}
+h3 {
+  padding-bottom: 2%;
+}
+.content {
+  align-items: center;
+  padding: 10%;
+}
+.image {
+  border-radius: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .testi {
+    flex-direction: column;
+  }
+}
+#testimonial h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 70px;
+}
+#testimonial {
+  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-form {
+  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5% 10%;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contuct_heading {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.label_info {
+  display: none;
+}
+
+.input_info {
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 74px;
+  background: #e0e0e0;
+  box-shadow: inset 33px 33px 66px #969696, inset -33px -33px 66px #ffffff;
+  padding: 10px;
+  width: 100%;
+}
+
+.butt_link {
+  border-radius: 74px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  width: 100%;
+  padding: 10px;
+}
+.contuct_info {
+  width: 100%;
+}
+.cont {
+  display: flex;
+}
+.cont > div {
+  margin: 5%;
+}
+.message_input {
+  border-radius: 20%;
+  padding: 10%;
+  padding-bottom: 25%;
+}
+.buttons {
+  padding-bottom: 10%;
 }

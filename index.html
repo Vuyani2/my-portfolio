@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vuyani's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/4668171386.js"
       crossorigin="anonymous"
@@ -14,14 +26,24 @@
   <body>
     <nav>
       <ul class="nav-list">
-        <li><a href="#about"></a> <i class="fas fa-home"></i></li>
-        <li><a href=""></a><i class="fas fa-user"></i></li>
-        <li><a href=""></a><i class="fas fa-briefcase"></i></li>
-        <li><a href=""></a><i class="fas fa-users"></i></li>
-        <li><a href=""></a><i class="fas fa-comments"></i></li>
+        <li>
+          <a href="#homepage"><i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+        </li>
+        <li>
+          <a href="#testimonial"><i class="fas fa-users"></i></a>
+        </li>
+        <li>
+          <a href="#form"><i class="fas fa-comments"></i></a>
+        </li>
       </ul>
     </nav>
-    <section class="homepage">
+    <section id="homepage">
       <div class="image">
         <img
           src="./images/V.kunelisi-removebg-preview.png"
@@ -43,11 +65,16 @@
       </div>
     </section>
     <section id="about">
-      <div>
-        <h1>About me</h1>
-        <div><img src="" alt="vuyani's picture" /></div>
+      <h1>About me</h1>
+      <div class="about-content">
+        <div class="img">
+          <img
+            src="./images/vuyaniK-removebg-preview.png"
+            alt="vuyani's picture"
+          />
+        </div>
         <div class="about">
-          <h2>Personal info</h2>
+          <h3>Personal info</h3>
           <p>
             My interest in computers started when I was in Grade 10 at the
             Mathematics, Science and Technology School. As a subject, I chose
@@ -56,8 +83,331 @@
             would always talk about coding languages at school and that got me
             interested in coding.
           </p>
+          <div class="my-details">
+            <div>
+              <p><span class="bold">Name</span>: Vuyani</p>
+              <p><span class="bold">Surname</span>: Kunelisi</p>
+              <p><span class="bold">Age</span>: 21</p>
+              <p><span class="bold">Nationality</span>: South African</p>
+            </div>
+            <div>
+              <p><span class="bold">adress</span>: Cape Town</p>
+              <p><span class="bold">Phone</span>: 082 390 8839</p>
+              <p><span class="bold">Email</span>: vuyanikunelisi@gmail.com</p>
+              <p><span class="bold">languages</span>: English and Xhosa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="education-exp">
+        <h2>Education & Experience</h2>
+        <div class="education-exp">
+          <div class="education">
+            <h3>Education</h3>
+            <div class="expo matric">
+              <h4>Matric</h4>
+              <h5>matritulated in 2017</h5>
+              <p>
+                I passed my matric in 2017 at the Cape Academy of Maths Science
+                and Technology. I was doing Maths, Physical Sciences and
+                Computer Application Technology as majors
+              </p>
+            </div>
+            <div class="expo CPUT">
+              <h4>Electrical Engineering-CPUT</h4>
+              <h5>from 2018-2019</h5>
+              <p>
+                I have studied electrical enginnering at CPUT but couldn't
+                complete the course
+              </p>
+            </div>
+          </div>
+          <div class="experiance">
+            <h3>Experience</h3>
+            <div class="expo IY">
+              <h4>Ikamva youth-Tutoring Organisation</h4>
+              <h5>from 2018-Present</h5>
+              <p>
+                I have been volunteering as a tutor for high school students
+                Tutoring Maths Pure, Maths lit, Technical Maths, Physical
+                Sciences, Technical Science and Computer application Technology
+              </p>
+            </div>
+            <div class="expo LC">
+              <h4>Life Choices-Junior Web Developer</h4>
+              <h5>Present</h5>
+              <p>I am curently with life choices as a Junior Web Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <ul class="skills-list">
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fab fa-python"></i>
+            </li>
+            <li>
+              <i class="fab fa-microsoft"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+    <section id="portfolio">
+      <div>
+        <h1 class="card-container-heading">My Projects</h1>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="/images/Forms-vuyani.png"
+              alt="Glassmorphic Form"
+              class="card-img"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">Glassmorphic Form</h2>
+              <h3 class="card-subtitle">HTML/CSS</h3>
+              <p class="card-description">
+                Glassmorphic styled form using Formspree and Glassmorphism.com
+              </p>
+              <div class="card-buttons">
+                <a
+                  href="https://contact-forms123.netlify.app/"
+                  target="_blank"
+                  class="button"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Vuyani2/contact_forms"
+                  target="_blank"
+                  class="button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Timeline-vuyani.png"
+              alt="Timeline picture"
+              class="card-img"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">My Timeline</h2>
+              <h3 class="card-subtitle">HTML/CSS</h3>
+              <p class="card-description">
+                My Timeline using animation and Glassmorphism.com
+              </p>
+              <div class="card-buttons">
+                <a
+                  href="https://distracted-mahavira-b16f2c.netlify.app/"
+                  target="_blank"
+                  class="button"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Vuyani2/Timeline"
+                  target="_blank"
+                  class="button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Testimonials-vuyani.png"
+              alt="Tersimonials"
+              class="card-img"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">my Tersimonials</h2>
+              <h3 class="card-subtitle">HTML/CSS</h3>
+              <p class="card-description">
+                My testimonials using a slider and Glassmorphism.com
+              </p>
+              <div class="card-buttons">
+                <a
+                  href="https://hopeful-bassi-6437ef.netlify.app"
+                  target="_blank"
+                  class="button"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Vuyani2/boilerplate"
+                  target="_blank"
+                  class="button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial">
+      <h1>Testimonials</h1>
+      <div class="owl-carousel">
+        <div class="testi">
+          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <div class="content">
+            <h2>name</h2>
+            <h3>position</h3>
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              sapiente quo ullam tempore numquam magnam minus ipsam sint
+              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
+              fuga unde odit amet.
+            </q>
+          </div>
+        </div>
+        <div class="testi">
+          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <div class="content">
+            <h2>Lerato Kanogoiwa</h2>
+            <h3>Student</h3>
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              sapiente quo ullam tempore numquam magnam minus ipsam sint
+              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
+              fuga unde odit amet.
+            </q>
+          </div>
+        </div>
+        <div class="testi">
+          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <div class="content">
+            <h2>Amanda Makara</h2>
+            <h3>Student</h3>
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              sapiente quo ullam tempore numquam magnam minus ipsam sint
+              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
+              fuga unde odit amet.
+            </q>
+          </div>
+        </div>
+        <div class="testi">
+          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <div class="content">
+            <h2>Kamogelo Mkonto</h2>
+            <h3>Student</h3>
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              sapiente quo ullam tempore numquam magnam minus ipsam sint
+              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
+              fuga unde odit amet.
+            </q>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form">
+      <div>
+        <!--form-->
+        <form
+          action="https://formspree.io/f/xnqlnwnd"
+          method="POST"
+          id="contact-form"
+        >
+          <h1 class="contuct_heading">Contact Me</h1>
+          <div class="cont">
+            <div>
+              <!--name-->
+              <div class="contuct_info">
+                <label for="name" class="label_info">name</label>
+                <input
+                  type="text"
+                  name="neme"
+                  required
+                  placeholder="Full name"
+                  id="name"
+                  class="input_info"
+                />
+              </div>
+              <!--email-->
+              <div class="contuct_info">
+                <label for="email" class="label_info">Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="name@domain.com"
+                  id="email"
+                  class="input_info"
+                />
+              </div>
+              <!--phone number-->
+              <div class="contuct_info">
+                <label for="number" class="label_info">phone number</label>
+                <input
+                  type="tel"
+                  name="number"
+                  required
+                  placeholder="072 602 2620"
+                  id="number"
+                  class="input_info"
+                />
+              </div>
+            </div>
+            <div>
+              <!--massage-->
+              <div class="contuct_info">
+                <label for="massage" class="label_info">your massage</label>
+                <input
+                  type="text"
+                  name="massage"
+                  placeholder="Type in your massage"
+                  id="massage"
+                  class="input_info message_input"
+                />
+                <!--send button-->
+                <div class="contuct_info buttons">
+                  <button class="butt_link">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              margin: 10,
+              stagePadding: 10,
+            },
+            500: {
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
