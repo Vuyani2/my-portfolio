@@ -8,12 +8,14 @@ body {
   margin-left: 20px; */
   font-family: sans-serif;
   font-size: 25px;
-  color: red;
+  color: black;
+  background-image: url(../images/andrii-leonov-zHsTwzb-nH4-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 #homepage {
   display: flex;
   align-items: center;
-  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,7 +32,7 @@ img {
 }
 
 #content {
-  padding: 20px;
+  padding: 85px;
   margin: 160px;
   color: #000000;
   margin-right: 250px;
@@ -39,17 +41,15 @@ img {
 }
 
 #content h1 {
-  margin: 20px;
   font-size: 70px;
 }
 
 #content h3 {
-  margin: 20px;
   font-size: 30px;
 }
 .btn {
-  margin: 20px;
   padding-top: 50px;
+  text-decoration: none;
 }
 
 .nav-list {
@@ -74,7 +74,7 @@ li {
 }
 .about {
   padding: 20px;
-  margin: 150px;
+  margin: 160px;
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
@@ -83,16 +83,37 @@ li {
 #about {
   /* display: flex;
   align-items: center; */
-  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #fff;
 }
 
-#about h1 {
+#about h2 {
   text-align: center;
   font-size: 70px;
+  padding-top: 100px;
+  text-transform: uppercase;
+  z-index: 2;
 }
+
+.about-watermark {
+  position: relative;
+}
+
+.about-watermark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  color: cornflowerblue;
+  opacity: 0.5;
+  content: "RESUME";
+  z-index: 1;
+  transform: translate(-50%, 120px) scale(3);
+}
+
 #about h3 {
   margin: 20px;
   font-size: 30px;
@@ -139,11 +160,12 @@ li {
 }
 .education,
 .experiance {
-  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin: 160px;
   color: #000000;
-}
-.about-content .img {
-  border: 5px solid red;
+  margin-right: 250px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .about-content .img img {
@@ -151,7 +173,7 @@ li {
 }
 i {
   font-size: 40px;
-  color: white;
+  color: black;
   padding: 25px;
 }
 
@@ -246,7 +268,6 @@ i {
   margin-bottom: 10px;
 }
 #portfolio {
-  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -255,9 +276,8 @@ i {
   color: black;
   border-style: solid;
   padding: 1%;
-  margin: 100px;
   border-radius: 20px;
-  background-color: red;
+  background-color: pink;
 }
 
 .my-details {
@@ -293,6 +313,7 @@ h3 {
 .content {
   align-items: center;
   padding: 10%;
+  text-align: center;
 }
 .image {
   border-radius: 200px;
@@ -309,24 +330,22 @@ h3 {
   font-size: 70px;
 }
 #testimonial {
-  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #fff;
 }
 
-#contact-form {
-  background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+#form {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(11px);
   -webkit-backdrop-filter: blur(11px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5% 10%;
-  color: white;
+  color: black;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -338,8 +357,11 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 20px;
   width: 100%;
+  text-align: center;
 }
-
+.get-heading {
+  text-align: center;
+}
 .label_info {
   display: none;
 }
@@ -359,6 +381,7 @@ h3 {
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   width: 100%;
   padding: 10px;
+  background-color: red;
 }
 .contuct_info {
   width: 100%;
@@ -376,4 +399,52 @@ h3 {
 }
 .buttons {
   padding-bottom: 10%;
+}
+.contact-icon {
+  display: flex;
+  padding: 60px;
+}
+footer {
+  background-color: #1b1f23;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: #cacaca;
+  font-size: 15px;
+}
+.contact-ico {
+  display: flex;
+  color: #000000;
+}
+
+.p1 {
+  font-weight: bold;
+}
+.contact-ico i {
+  color: white;
+}
+#homepage p {
+  margin-bottom: 20px;
+}
+.contact-icon i {
+  color: #000000;
+}
+
+.watermark {
+  text-align: center;
+  position: relative;
+}
+
+.watermark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  color: cornflowerblue;
+  opacity: 0.5;
+  content: "ABOUT ME";
+  z-index: -1;
+  transform: translate(-50%, 0px) scale(3);
 }

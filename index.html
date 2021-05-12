@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vuyani's portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -20,6 +21,7 @@
       src="https://kit.fontawesome.com/4668171386.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="./syles/styles.css" />
   </head>
@@ -65,7 +67,7 @@
       </div>
     </section>
     <section id="about">
-      <h1>About me</h1>
+      <h2 class="about-watermark">About me</h2>
       <div class="about-content">
         <div class="img">
           <img
@@ -73,7 +75,7 @@
             alt="vuyani's picture"
           />
         </div>
-        <div class="about">
+        <div class="about" data-aos="zoom-in">
           <h3>Personal info</h3>
           <p>
             My interest in computers started when I was in Grade 10 at the
@@ -102,7 +104,7 @@
       <div id="education-exp">
         <h2>Education & Experience</h2>
         <div class="education-exp">
-          <div class="education">
+          <div class="education" data-aos="zoom-in">
             <h3>Education</h3>
             <div class="expo matric">
               <h4>Matric</h4>
@@ -122,7 +124,7 @@
               </p>
             </div>
           </div>
-          <div class="experiance">
+          <div class="experiance" data-aos="zoom-in">
             <h3>Experience</h3>
             <div class="expo IY">
               <h4>Ikamva youth-Tutoring Organisation</h4>
@@ -254,15 +256,17 @@
       <h1>Testimonials</h1>
       <div class="owl-carousel">
         <div class="testi">
-          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <img
+            src="./images/Godwin.png"
+            alt="picture of Godwin"
+            class="image"
+          />
           <div class="content">
-            <h2>name</h2>
-            <h3>position</h3>
+            <h2>Godwin</h2>
+            <h3>Head of Curriculum and Learning</h3>
             <q>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              sapiente quo ullam tempore numquam magnam minus ipsam sint
-              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
-              fuga unde odit amet.
+              Vuyani has shown the desire to learn new coding skills. His
+              commitment in his projects throughout is immeasurable.
             </q>
           </div>
         </div>
@@ -309,13 +313,43 @@
     </section>
     <section id="form">
       <div>
+        <h1 class="contuct_heading">Contact Me</h1>
+        <h6 class="get-heading">Get in touch</h6>
+        <img src="./images/my-location.jpg" alt="my location" />
+      </div>
+      <div class="contact-icon">
+        <div>
+          <a href="mailto:vuyanikunelisi@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="http://github.com/Vuyani2"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
+        <div>
+          <a href="tel:+27823908839"><i class="fas fa-phone-square-alt"></i></a>
+        </div>
+        <div>
+          <a
+            href="http://www.linkedin.com/feed/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div>
         <!--form-->
         <form
           action="https://formspree.io/f/xnqlnwnd"
           method="POST"
           id="contact-form"
         >
-          <h1 class="contuct_heading">Contact Me</h1>
           <div class="cont">
             <div>
               <!--name-->
@@ -376,6 +410,8 @@
         </form>
       </div>
     </section>
+
+    <h2 class="watermark">ABOUT ME</h2>
     <!-- Script tags under here -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -409,5 +445,43 @@
         });
       });
     </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
+  <footer>
+    <div class="footer">
+      <div>
+        <p class="p1">created by:</p>
+        <p>Vuyani Kunelisi</p>
+      </div>
+      <div>
+        <p class="p1">Address:</p>
+        <p>16463 Vuyani Maphuza Nyanga Cape Town</p>
+      </div>
+      <div>
+        <h6 class="get-heading">Get in touch</h6>
+        <div class="contact-ico">
+          <div>
+            <a href="mailto:vuyanikunelisi@gmail.com">
+              <i class="fas fa-envelope-square fa-2x"></i>
+            </a>
+          </div>
+          <div>
+            <a href="tel:+27823908839"
+              ><i class="fas fa-phone-square-alt fa-2x"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="http://www.linkedin.com/feed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
