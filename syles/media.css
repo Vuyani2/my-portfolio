@@ -1,0 +1,124 @@
+@media only screen and (max-width: 600px) {
+  #homepage {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 90%;
+    margin: auto;
+  }
+
+  #content {
+    padding: 5% 2.5%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #content h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  #content p {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  #about .about-content {
+    flex-direction: column;
+  }
+
+  #about .img {
+    width: 100%;
+  }
+
+  #about .img img {
+    width: 90%;
+    margin: auto;
+  }
+
+  #about .about {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about .my-details div {
+    width: 50%;
+    word-wrap: break-word;
+  }
+
+  #about h2.color {
+    font-size: 30px;
+  }
+
+  #education-exp div {
+    padding: 5% 0;
+  }
+
+  #education-exp div {
+    margin: 0;
+  }
+
+  .education-exp {
+    flex-direction: column;
+  }
+
+  #about .education h3 {
+    margin-left: 10px;
+  }
+
+  #about .experience h3 {
+    margin-left: 10px;
+  }
+
+  #education-exp .skills-list {
+    flex-wrap: wrap;
+  }
+
+  #education-exp .skills-list li {
+    margin: 10px 0;
+  }
+
+  #testimonial .testimonial-heading {
+    font-size: 30px;
+  }
+
+  .footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .contact-ico {
+    justify-content: space-around;
+  }
+
+  h2::before,
+  h1::before {
+    display: none;
+  }
+
+  h2.color,
+  h1.color {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  li {
+    margin: 50px;
+    height: 50px;
+    width: 50px;
+  }
+  i {
+    font-size: 23px;
+  }
+}

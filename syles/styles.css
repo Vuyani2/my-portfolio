@@ -2,10 +2,10 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-  /* margin-top: 30px;
-  margin-left: 20px; */
+  overflow-x: hidden;
   font-family: sans-serif;
   font-size: 25px;
   color: black;
@@ -14,6 +14,7 @@ body {
   background-attachment: fixed;
 }
 #homepage {
+  padding-left: 100px;
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -55,6 +56,7 @@ img {
 .nav-list {
   right: 20px;
   position: fixed;
+  z-index: 999;
 }
 
 li {
@@ -81,8 +83,6 @@ li {
   background: rgba(255, 255, 255, 0.5);
 }
 #about {
-  /* display: flex;
-  align-items: center; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -112,6 +112,58 @@ li {
   content: "RESUME";
   z-index: 1;
   transform: translate(-50%, 120px) scale(3);
+}
+
+.contuct_heading {
+  position: relative;
+}
+
+.contuct_heading::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  color: cornflowerblue;
+  opacity: 0.5;
+  content: "GET IN TOUCH";
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.card-container-heading {
+  position: relative;
+}
+
+.card-container-heading::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  color: cornflowerblue;
+  opacity: 0.5;
+  content: "WHAT I DO";
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.testimonial-heading {
+  z-index: 999;
+  position: relative;
+}
+
+.testimonial-heading::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  color: cornflowerblue;
+  opacity: 0.5;
+  content: "REVIEWS";
+  z-index: 1;
+  transform: translate(-50%, 0) scale(3);
 }
 
 #about h3 {
@@ -176,7 +228,10 @@ i {
   color: black;
   padding: 25px;
 }
-
+i:hover {
+  color: yellow;
+  transition: 0.5s all ease-in;
+}
 #education-exp > .skills {
   width: 80%;
   margin: 0 auto;
@@ -199,6 +254,7 @@ i {
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5% 10%;
   color: #000000;
+  margin-top: 100px;
 }
 
 .card-container-heading {
@@ -268,6 +324,7 @@ i {
   margin-bottom: 10px;
 }
 #portfolio {
+  padding-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -277,7 +334,7 @@ i {
   border-style: solid;
   padding: 1%;
   border-radius: 20px;
-  background-color: pink;
+  background-color: lightblue;
 }
 
 .my-details {
@@ -330,6 +387,7 @@ h3 {
   font-size: 70px;
 }
 #testimonial {
+  padding-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -431,20 +489,22 @@ footer {
   color: #000000;
 }
 
-.watermark {
-  text-align: center;
-  position: relative;
+.color {
+  animation: color-trans 6s infinite ease-in-out alternate;
+}
+@keyframes color-trans {
+  0% {
+    color: black;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: royalblue;
+  }
 }
 
-.watermark::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  width: 100%;
-  color: cornflowerblue;
-  opacity: 0.5;
-  content: "ABOUT ME";
-  z-index: -1;
-  transform: translate(-50%, 0px) scale(3);
+.container {
+  max-width: 1200px;
+  margin: auto;
 }

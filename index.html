@@ -24,6 +24,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="./syles/styles.css" />
+    <link rel="stylesheet" href="./syles/media.css" />
   </head>
   <body>
     <nav>
@@ -54,8 +55,8 @@
       </div>
 
       <div id="content">
-        <h1>Hey I'm Vuyani</h1>
-        <h3>Junior Web Developer</h3>
+        <h1 class="color">Hey I'm Vuyani</h1>
+        <h3 class="color">Junior Web Developer</h3>
         <p>
           I am an outspoken young man who wants to transform my life through
           education. I am goal orientated and determined to excel in life and
@@ -67,7 +68,7 @@
       </div>
     </section>
     <section id="about">
-      <h2 class="about-watermark">About me</h2>
+      <h2 class="about-watermark color">About me</h2>
       <div class="about-content">
         <div class="img">
           <img
@@ -76,7 +77,7 @@
           />
         </div>
         <div class="about" data-aos="zoom-in">
-          <h3>Personal info</h3>
+          <h3 class="color">Personal info</h3>
           <p>
             My interest in computers started when I was in Grade 10 at the
             Mathematics, Science and Technology School. As a subject, I chose
@@ -102,7 +103,7 @@
         </div>
       </div>
       <div id="education-exp">
-        <h2>Education & Experience</h2>
+        <h2 class="color">Education & Experience</h2>
         <div class="education-exp">
           <div class="education" data-aos="zoom-in">
             <h3>Education</h3>
@@ -143,7 +144,7 @@
           </div>
         </div>
         <div class="skills">
-          <h2>My Skills</h2>
+          <h2 class="color">My Skills</h2>
           <ul class="skills-list">
             <li>
               <i class="fab fa-html5"></i>
@@ -163,7 +164,7 @@
     </section>
     <section id="portfolio">
       <div>
-        <h1 class="card-container-heading">My Projects</h1>
+        <h1 class="card-container-heading color">My Projects</h1>
         <div class="card-container">
           <div class="card">
             <img
@@ -249,11 +250,67 @@
               </div>
             </div>
           </div>
+          <div class="card">
+            <img
+              src="./images/Temp-conv.jpg"
+              alt="Tempreture Convetor picture"
+              class="card-img"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">Tempreture Convetor</h2>
+              <h3 class="card-subtitle">Python</h3>
+              <p class="card-description">
+                Tempreture Convetor using tkinter in Python
+              </p>
+              <div class="card-buttons">
+                <a
+                  href="https://replit.com/@Vuyani2/temperatureconverter#main.py"
+                  target="_blank"
+                  class="button"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Vuyani2/Temp-converter"
+                  target="_blank"
+                  class="button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/mobile-shoe-store.jpg"
+              alt="Mobile shoe store site"
+              class="card-img"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">Mobile Shoe Store</h2>
+              <h3 class="card-subtitle">HTML/CSS</h3>
+              <p class="card-description">
+                Mobile shoe store web site using css and HTML
+              </p>
+              <div class="card-buttons">
+                <a
+                  href="https://ecstatic-liskov-afba8f.netlify.app"
+                  target="_blank"
+                  class="button"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Vuyani2/Shoe-Store"
+                  target="_blank"
+                  class="button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="testimonial">
-      <h1>Testimonials</h1>
+      <h1 class="color testimonial-heading">Testimonials</h1>
       <div class="owl-carousel">
         <div class="testi">
           <img
@@ -271,41 +328,47 @@
           </div>
         </div>
         <div class="testi">
-          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <img src="/images/lerato.jpg" alt="picture of Lerato" class="image" />
           <div class="content">
             <h2>Lerato Kanogoiwa</h2>
-            <h3>Student</h3>
+            <h3>Peer</h3>
             <q>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              sapiente quo ullam tempore numquam magnam minus ipsam sint
-              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
-              fuga unde odit amet.
+              the is a lot to say about Vuyani, a team leader, creative, smart
+              but most of all he is dedicated and works at acheiving his goals,
+              has good communication skills and fun to be around.
             </q>
           </div>
         </div>
         <div class="testi">
-          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <img
+            src="/images/2021-team-jason-wandrag.jpg"
+            alt="picture of Jason"
+            class="image"
+          />
           <div class="content">
-            <h2>Amanda Makara</h2>
-            <h3>Student</h3>
+            <h2>Jason</h2>
+            <h3>Lecture</h3>
             <q>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              sapiente quo ullam tempore numquam magnam minus ipsam sint
-              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
-              fuga unde odit amet.
+              Vuyani is a go getter. He constantly strives to improve himself
+              and has proven to be a leader among his peers
             </q>
           </div>
         </div>
         <div class="testi">
-          <img src="/images/vuyani.jpg" alt="picture of Vuyani" class="image" />
+          <img
+            src="/images/Hlonela Mabhani (3).JPG"
+            alt="picture of Hlonela"
+            class="image"
+          />
           <div class="content">
-            <h2>Kamogelo Mkonto</h2>
-            <h3>Student</h3>
+            <h2>Hlonela</h2>
+            <h3>Peer</h3>
             <q>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
-              sapiente quo ullam tempore numquam magnam minus ipsam sint
-              accusamus. Distinctio ad recusandae blanditiis totam eum rerum,
-              fuga unde odit amet.
+              Working with Vuyani remains a great joy, always. His persona of
+              excellence stands him out in a crowd, also, his enthusiasm for
+              learning will surely take him far, I strongly believe. With every
+              project that we have done together, he is always a pivotal team
+              player to have.
             </q>
           </div>
         </div>
@@ -313,8 +376,7 @@
     </section>
     <section id="form">
       <div>
-        <h1 class="contuct_heading">Contact Me</h1>
-        <h6 class="get-heading">Get in touch</h6>
+        <h1 class="contuct_heading color">Contact Me</h1>
         <img src="./images/my-location.jpg" alt="my location" />
       </div>
       <div class="contact-icon">
@@ -410,8 +472,6 @@
         </form>
       </div>
     </section>
-
-    <h2 class="watermark">ABOUT ME</h2>
     <!-- Script tags under here -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
