@@ -85,6 +85,7 @@
               <p><span class="bold">Name</span>: Vuyani</p>
               <p><span class="bold">Surname</span>: Kunelisi</p>
               <p><span class="bold">Age</span>: 21</p>
+              <p><span class="bold">Date of birth</span>: 00/03/19</p>
               <p><span class="bold">Nationality</span>: South African</p>
             </div>
             <div>
@@ -159,8 +160,26 @@
             </div>
           </div>
         </div>
+        <div class="skll">
+          <div class="passion">
+            <h4>Passion Board</h4>
+            <p>Playing board games. Chess and Checkers</p>
+            <p>Watching movies</p>          
+          </div>
+          <div class="passion">
+            <h4>Soft Skills</h4>
+            <p>Team player</p>
+            <p>Analytical</p>
+            <p>Good problem-solving skills</p>
+            <p>Good communication skills</p>
+          </div>
+        </div>
+          
+            
+            
+       
         <div class="skills">
-          <h2 class="color">My Skills</h2>
+          <h2 class="color">Technical Skills</h2>
           <ul class="skills-list">
             <li>
               <i class="fab fa-html5"></i>
@@ -175,6 +194,10 @@
               <p>Python</p>
             </li>
             <li>
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </li>
+            <li>
               <i class="fab fa-microsoft"></i>
               <p>MS office</p>
             </li>
@@ -185,114 +208,13 @@
     <section id="portfolio">
       <div>
         <h1 class="card-container-heading color">My Projects</h1>
-        <div class="porfolio-gallery">
-      <div class="portfolio-item item">
-        <div class="portfolio-details">
-          <h2>Glassmorphic Form</h2>
-          <h3>HTML/CSS</h3>
-          <p>Glassmorphic styled form using Formspree and Glassmorphism.com</p>
+        <div class="button-container">
+          <button onclick="filterCards('All')">All</button>
+          <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+          <button onclick="filterCards('Python')">Python</button>
+          <button onclick="filterCards('JavaScript')">JavaScript</button>
         </div>
-        <div class="btns-container">
-          <a
-            href="https://contact-forms123.netlify.app/"
-            target="_blank"
-            class="button"
-            >Live</a
-          >
-          <a
-            href="https://github.com/Vuyani2/contact_forms"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
-        </div>
-         
-      </div>
-      <div class="portfolio-item item1">
-        <div class="portfolio-details">
-          <h2>My Timeline</h2>
-          <h3>HTML/CSS</h3>
-          <p>My Timeline using animation and Glassmorphism.com</p>
-        </div>
-        <div class="card-buttons">
-          <a
-            href="https://hopeful-bassi-6437ef.netlify.app"
-            target="_blank"
-            class="button"
-            >Live</a
-          >
-          <a
-            href="https://github.com/Vuyani2/boilerplate"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
-        </div>
-      </div>
-        <div class="portfolio-item item2">
-          <div class="portfolio-details">
-            <h2>my Tersimonials</h2>
-            <h3>HTML/CSS</h3>
-            <p>My testimonials using a slider and Glassmorphism.com</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://distracted-mahavira-b16f2c.netlify.app/"
-              target="_blank"
-              class="button"
-              >Live</a
-            >
-            <a
-              href="https://github.com/Vuyani2/Timeline"
-              target="_blank"
-              class="button"
-              >Github</a
-            >
-          </div>
-      </div>
-      <div class="portfolio-item item3">
-        <div class="portfolio-details">
-          <h2>Tempreture Convetor</h2>
-          <h3>Python</h3>
-          <p>Tempreture Convetor using tkinter in Python</p>
-        </div>
-        <div class="card-buttons">
-          <a
-            href="https://replit.com/@Vuyani2/temperatureconverter#main.py"
-            target="_blank"
-            class="button"
-            >Live</a
-          >
-          <a
-            href="https://github.com/Vuyani2/Temp-converter"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
-        </div>
-    </div>
-    <div class="portfolio-item item4">
-      <div class="portfolio-details">
-        <h2>Mobile Shoe Store</h2>
-        <h3>HTML/CSS</h3>
-        <p>Mobile shoe store web site using css and HTML</p>
-      </div>
-      <div class="card-buttons">
-        <a
-          href="https://ecstatic-liskov-afba8f.netlify.app"
-          target="_blank"
-          class="button"
-          >Live</a
-        >
-        <a
-          href="https://github.com/Vuyani2/Shoe-Store"
-          target="_blank"
-          class="button"
-          >Github</a
-        >
-      </div>
-  </div>
-      </div>
+        <div class="porfolio-gallery"></div>
     </section>
    
     <section id="testimonial">
@@ -516,6 +438,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./jScripts/cards.js"></script>
   </body>
   <footer>
     <div class="footer">
