@@ -26,6 +26,7 @@ img {
   width: 70vh;
   height: 90%;
   border-radius: 20px;
+  margin-top: 20px;
 }
 
 #content {
@@ -571,7 +572,7 @@ footer {
   width: 100%;
   max-width: 440px;
   height: 350px;
-  background: url(../images/Forms-vuyani.png) no-repeat;
+  background: url(https://picsum.photos/300?random=4) no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 100px;
