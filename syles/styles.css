@@ -8,9 +8,10 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   color: black;
-  background-image: url(../images/images.jpeg);
+  background-image: url(../images/depositphotos_62587105-stock-illustration-bright-blue-swoosh-glowing-abstraction.jpg);
   background-size: cover;
   background-attachment: fixed;
+  font-size: large;
 }
 #homepage {
   padding-left: 100px;
@@ -28,7 +29,6 @@ img {
 }
 
 #content {
-  padding: 85px;
   margin: 160px;
   color: #000000;
   margin-right: 250px;
