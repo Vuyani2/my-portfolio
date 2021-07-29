@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   color: black;
-  background-image: url(../images/depositphotos_62587105-stock-illustration-bright-blue-swoosh-glowing-abstraction.jpg);
+  background-image: url(../images/image.png);
   background-size: cover;
   background-attachment: fixed;
   font-size: large;
@@ -23,20 +23,30 @@ body {
 }
 
 img {
-  width: 70vh;
+  width: 100%;
   height: 90%;
   border-radius: 20px;
   margin-top: 20px;
 }
 
+.img {
+  width: 50%;
+}
+.image {
+  width: 50%;
+}
+
 #content {
   margin: 160px;
+  margin-right: 160px;
+  margin-right: 160px;
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding: 20px;
 }
-
 #content h1 {
   font-size: 40px;
 }
@@ -57,7 +67,7 @@ img {
 }
 
 li {
-  background: royalblue;
+  background: #3d72a4;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -74,11 +84,14 @@ li {
 .about {
   padding: 20px;
   margin: 160px;
+  margin-right: 160px;
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
+  width: 50%;
 }
+
 #about {
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,7 +351,7 @@ i:hover {
 }
 .btn {
   color: black;
-  border-style: solid;
+  border-style: groove;
   padding: 1%;
   border-radius: 20px;
   background-color: lightblue;
@@ -464,7 +477,7 @@ h3 {
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   width: 100%;
   padding: 10px;
-  background-color: royalblue;
+  background-color: #3d72a4;
 }
 .contuct_info {
   width: 100%;
@@ -508,21 +521,23 @@ footer {
   color: white;
 }
 #homepage p {
-  margin-bottom: 20px;
+  margin: 25px 0px;
+  margin-bottom: 25px;
 }
+
 .contact-icon i {
   color: #000000;
 }
 
 .color {
-  animation: color-trans 6s infinite ease-in-out alternate;
+  animation: color-trans 3s infinite ease-in-out alternate;
 }
 @keyframes color-trans {
   50% {
     color: black;
   }
   100% {
-    color: royalblue;
+    color: #3d72a4;
   }
 }
 
@@ -544,7 +559,7 @@ footer {
   content: "";
   bottom: -120px;
   left: 50%;
-  background: blue;
+  background: #3d72a4;
   transform: translateX(-50%);
   height: 130px;
   z-index: 1;
@@ -552,7 +567,7 @@ footer {
 }
 
 .EducationIcon i {
-  background-color: blue;
+  background-color: #3d72a4;
   border-radius: 50%;
   z-index: 3;
 
@@ -593,28 +608,58 @@ footer {
   margin-top: 20px;
 }
 .porfolio-gallery .portfolio-item.item1 {
-  background: url(../images/Timeline-vuyani.png) no-repeat;
+  background: url(../images/Forms-vuyani.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .porfolio-gallery .portfolio-item.item2 {
-  background: url(../images/Testimonials-vuyani.png) no-repeat;
+  background: url(../images/Timeline-vuyani.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .porfolio-gallery .portfolio-item.item3 {
-  background: url(../images/Temp-conv.jpg) no-repeat;
+  background: url(../images/Testimonials-vuyani.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .porfolio-gallery .portfolio-item.item4 {
+  background: url(../images/Temp-conv.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.porfolio-gallery .portfolio-item.item5 {
   background: url(../images/mobile-shoe-store.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+.porfolio-gallery .portfolio-item.item6 {
+  background: url(../images/Screenshot\ from\ 2021-07-29\ 11-22-40.png)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.porfolio-gallery .portfolio-item.item7 {
+  background: url(../images/lc_logins.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.porfolio-gallery .portfolio-item:hover {
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.5),
+      rgba(225, 225, 225, 0.5)
+    ),
+    url(https://picsum.photos/300?random=4) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .porfolio-gallery {
   display: flex;
   flex-wrap: wrap;

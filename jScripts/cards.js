@@ -7,6 +7,7 @@ let projects = [
     description: "Styled form using Formspree and Glassmorphism.com",
     githubURL: "https://github.com/Vuyani2/contact_forms",
     liveProjectURL: "https://contact-forms123.netlify.app/",
+    obj: "item1",
   },
   {
     imgURL: "https://picsum.photos/300?random=2",
@@ -16,6 +17,7 @@ let projects = [
     description: "My Timeline using animation and Glassmorphism.com",
     githubURL: "https://github.com/Vuyani2/boilerplate",
     liveProjectURL: "https://hopeful-bassi-6437ef.netlify.app",
+    obj: "item2",
   },
   {
     imgURL: "https://picsum.photos/300?random=3",
@@ -25,6 +27,7 @@ let projects = [
     description: "My testimonials using a slider and Glassmorphism.com",
     githubURL: "https://github.com/Vuyani2/Timeline",
     liveProjectURL: "https://distracted-mahavira-b16f2c.netlify.app/",
+    obj: "item3",
   },
   {
     imgURL: "https://picsum.photos/300?random=23",
@@ -34,6 +37,7 @@ let projects = [
     description: "Tempreture Convetor using tkinter in Python",
     githubURL: "https://github.com/Vuyani2/Temp-converter",
     liveProjectURL: "https://replit.com/@Vuyani2/temperatureconverter#main.py",
+    obj: "item4",
   },
   {
     imgURL: "https://picsum.photos/300?random=4",
@@ -43,6 +47,7 @@ let projects = [
     description: "Mobile shoe store web site using css and HTML",
     githubURL: "https://github.com/Vuyani2/Shoe-Store",
     liveProjectURL: "https://ecstatic-liskov-afba8f.netlify.app",
+    obj: "item5",
   },
   {
     imgURL: "https://picsum.photos/300?random=5",
@@ -50,14 +55,27 @@ let projects = [
     title: "Lotto Numbers App",
     techStack: "Python",
     description: "Using tkinter in python to genarate a lotto application",
-    githubURL: "#",
-    liveProjectURL: "#",
+    githubURL: "https://github.com/Vuyani2/lotto_app",
+    liveProjectURL: "https://replit.com/@Vuyani2/lottoapp",
+    obj: "item6",
+  },
+  {
+    imgURL: "https://picsum.photos/300?random=6",
+    imgALT: "My Project 7",
+    title: "LifeChoices Sign in System ",
+    techStack: "Python",
+    description:
+      "Using tkinter in python and mysql databases for user and admin logins for LifeChoices",
+    githubURL: "https://github.com/Vuyani2/mysql_tkinter_End_of_Module_project",
+    liveProjectURL:
+      "https://replit.com/@Vuyani2/mysqltkinterEndofModuleproject",
+    obj: "item7",
   },
 ];
 
 function createCard(card) {
   let createdCard = `
-    <div class="portfolio-item" techStack=${card.techStack}>
+    <div class="portfolio-item ${card.obj}" techStack=${card.techStack}>
         <div class="portfolio-details">
             <h2>${card.title}</h2>
             <h3>${card.techStack}</h3>
