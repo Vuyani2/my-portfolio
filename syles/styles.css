@@ -43,7 +43,6 @@ img {
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
   width: 50%;
   padding: 20px;
 }
@@ -88,7 +87,6 @@ li {
   color: #000000;
   margin-right: 250px;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
   width: 50%;
 }
 
@@ -318,7 +316,7 @@ i:hover {
 }
 
 .button {
-  background: rgba(255, 255, 255, 0.4);
+  background: #3d72a4;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
