@@ -128,3 +128,16 @@ function filterCards(category) {
     card.style.display = "block";
   }
 }
+
+var typed = new Typed(".typo", {
+  strings: [
+    "Full Stack Developer",
+    "Software Developer",
+    "Web Developer",
+    "Tutor",
+    "Teacher",
+  ],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
