@@ -648,6 +648,12 @@ footer {
   background-position: center;
 }
 
+.porfolio-gallery .portfolio-item.item8 {
+  background: url(../images/Screenshot\ from\ 2021-10-15\ 10-02-04.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .porfolio-gallery .portfolio-item:hover {
   background: linear-gradient(
       rgba(225, 225, 225, 0.5),
