@@ -62,7 +62,7 @@ img {
   right: 20px;
   position: fixed;
   z-index: 999;
-  top: 140px;
+  top: 70px;
 }
 
 li {
@@ -72,7 +72,7 @@ li {
   -webkit-backdrop-filter: blur(18px);
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 50px;
+  margin: 30px;
   height: 70px;
   width: 70px;
   display: flex;
@@ -576,14 +576,14 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 138px;
-  height: 138px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
 .porfolio-gallery .portfolio-item {
   width: 100%;
-  max-width: 440px;
+  max-width: 357px;
   height: 350px;
   background: url(https://picsum.photos/300?random=4) no-repeat;
   background-size: cover;
@@ -690,7 +690,7 @@ footer {
   margin-right: 1%;
   padding: 10px 20px;
   margin: 20px;
-  margin-right: 50px;
+  margin-right: -79px;
   margin-left: 120px;
   background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
