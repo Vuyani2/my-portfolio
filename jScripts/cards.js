@@ -71,6 +71,18 @@ let projects = [
       "https://replit.com/@Vuyani2/mysqltkinterEndofModuleproject",
     obj: "item7",
   },
+  {
+    imgURL: "https://picsum.photos/300?random=7",
+    imgALT: "My Project 8",
+    title: "Flight ticket bookings",
+    techStack: "HTML/CSS",
+    description:
+      "Flight bookings using HTML, CSS, JavaScript and Python",
+    githubURL: "https://github.com/Vuyani2/final-project-front-end",
+    liveProjectURL:
+      "https://vigorous-jackson-07968f.netlify.app/",
+    obj: "item8",
+  },
 ];
 
 function createCard(card) {
