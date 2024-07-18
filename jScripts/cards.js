@@ -148,6 +148,8 @@ var typed = new Typed(".typo", {
     "Web Developer",
     "Tutor",
     "Teacher",
+    "Social Media Specialist",
+    "Customer Service Advisor/Agent",
   ],
   typeSpeed: 100,
   backSpeed: 60,
